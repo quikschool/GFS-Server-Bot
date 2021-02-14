@@ -46,6 +46,7 @@ module.exports = {
         embed = new Discord.MessageEmbed()
             .setTitle(reply)
             .setColor('#FF0000')
+            .setFooter('Command arguments: <required> (optional)')
             .addFields(
                 {
                     name: 'Commands: ',

@@ -1,5 +1,5 @@
 {
     "token": "ODAwOTU2NTcyMzQyNjgxNjUw.YAZq7w.SHFXlkdWFkqp-vMmaiTUt8T5dfM",
     "prefix": "=",
-    "mongoPath": "mongodb://localhost:27017"
+    "mongoPath": "mongodb+srv://QuikSchool:superninja48@gfs-server-database.vkaba.mongodb.net/publicTags?retryWrites=true&w=majority"
 }

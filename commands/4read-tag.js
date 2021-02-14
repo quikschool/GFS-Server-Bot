@@ -26,7 +26,7 @@ module.exports = {
         // Embed compiling all the above information to the user
         let embed = null;
         
-        if (tagInfo === undefined) {
+        if (tagInfo === undefined || tagInfo === null) {
             embed = new Discord.MessageEmbed()
             .setTitle(target)
             .setFooter(`Created by: ${user.tag}`)

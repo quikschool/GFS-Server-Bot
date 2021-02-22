@@ -137,3 +137,19 @@ module.exports.deleteTag = async (deleteName, messageAuthor) => {
         }
     });
 }
+
+module.exports.tagsList = async () => {
+    return await mongo().then(async (mongoose) => {
+        try {
+            const listResult = await tagSchema.find(null, {
+                _id:0,
+                tagAuthor:0,
+                __v:0
+            });
+            console.log(listResult);
+            return listResult
+        } finally {
+            mongoose.connection.close();
+        }
+    });
+}
